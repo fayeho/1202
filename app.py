@@ -4,7 +4,7 @@ from flask import request, render_template
 import joblib
 
 @app.route("/", methods=["GET", "POST"])
-def main():
+def index():
     if request.method == "POST":
         rates = request.form.get("rates")
         print(rates)
